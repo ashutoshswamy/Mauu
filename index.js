@@ -12,7 +12,6 @@ const client = new discord.Client({
 });
 
 client.once("ready", () => {
-  client.login(process.env.BOT_TOKEN);
   console.log(`Logged in as ${client.user.tag}`);
   client.user.setActivity("with Slash commands");
 });
@@ -49,3 +48,4 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 keepAlive();
+client.login(process.env.BOT_TOKEN);
