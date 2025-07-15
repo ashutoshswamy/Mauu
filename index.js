@@ -1,4 +1,5 @@
 require("dotenv").config();
+const keepAlive = require("./keepAlive");
 const discord = require("discord.js");
 const fs = require("node:fs");
 const path = require("node:path");
@@ -47,3 +48,4 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 client.login(process.env.BOT_TOKEN);
+keepAlive();
