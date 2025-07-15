@@ -4,6 +4,8 @@ const discord = require("discord.js");
 const fs = require("node:fs");
 const path = require("node:path");
 
+keepAlive();
+
 const client = new discord.Client({
   intents: [
     discord.GatewayIntentBits.Guilds,
@@ -48,4 +50,3 @@ client.on("interactionCreate", async (interaction) => {
 });
 
 client.login(process.env.BOT_TOKEN);
-keepAlive();
