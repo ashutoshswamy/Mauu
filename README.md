@@ -2,7 +2,7 @@
 
 ## Overview
 
-Mauu is a modular Discord bot built with [discord.js], featuring AI-powered commands, image generation, and utility tools for your server.
+Mauu is a modular Discord bot built with [discord.js](https://discord.js.org/), featuring AI-powered commands, image generation, and utility tools for your server.
 
 ## Features
 
